@@ -1,0 +1,305 @@
+html,body{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background: url(../assets/capa.png),
+              url(../assets/ruido.png),
+              linear-gradient(50deg, #ff4169,#7c26f8 );
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR  */
+
+.transparent-navbar{
+  padding: 15px 0;
+  background:rgba(0,0,0,0.6);
+}
+
+.navbar-toggler:hover{
+  background:2px solid white;
+}
+
+.box{
+  background:rgba(0,0,0,0.1);
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.box:hover{
+  background:rgba(255,255,255);
+  color: black;
+  border: 2px solid black;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #7c26f8;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.5);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.slash{
+  width: 1px;
+  background: white;
+  margin: 20px 15px;
+}
+
+
+/* HOME  */
+
+#home{
+  height: 100%;
+}
+
+.cover{
+  text-align: center;
+}
+
+h1{
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom:50px;
+  color:white;
+  font-size: bold;
+}
+
+h2{
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h3{
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+
+.btn-custom{
+  color: white;
+  border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+  padding: 10px 20px;
+}
+
+.btn-signup{
+  background: #7c26f8;
+}
+
+.btn-signup:hover{
+  background: #6207e3;
+  color:white;
+}
+
+.btn-premium{
+  border: 2px solid white;
+}
+
+.btn-premium:hover{
+  background: white;
+  color:black;
+}
+
+
+/* SERVICES  */
+
+#services{
+  background: white;
+  padding: 20px 0 20px 0;
+}
+
+#services h2, #services h3{
+  color:#7c26f8;
+}
+
+
+/* RESOURCES  */
+
+#resources{
+  padding: 20px 0 20px 0;
+  color: white;
+}
+
+#resources h2{
+  color:white;
+}
+
+#resources h3{
+  color:#9bf0e1;
+}
+
+.rotates{
+  transform: rotate(30deg);
+  padding-left: 80px;
+}
+
+/* FOOTER  */
+
+footer{
+  background: #000;
+  padding: 50px 0 20px 0;
+  position: relative;
+}
+
+footer h4{
+  color: #919496;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.navfooter-item{
+  color: white;
+  font-size: 0.8em;
+}
+
+.navfooter-item:hover{
+  color: #9bf0e1;
+  text-decoration: none;
+}
+
+.social-media-links{
+  float: right;
+  margin: 10px;
+}
+
+
+
+
+
+/* RESPONSIVE SIZES  */
+
+@media (max-width: 576px) { 
+  .cover h1 {
+    font-size: 3em;
+    }
+    
+    .slash{
+      width: 704px;
+      height: 1px;
+      background: white;
+      margin: 10px;
+    }
+    
+    .btn-signup{
+    margin: 10px 15px;
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+    .btn-premium{
+      margin: 10px 15px;
+      width: 250px;
+      font-size: 15px;
+      font-weight: bold;
+      }
+      
+      .social-media-links{
+        float: left;
+      }
+
+
+   }
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+  .cover h1 {
+ font-size: 3.2em;
+ }
+    
+ .btn-custom{
+  margin: 10px 15px;
+ }
+
+ .slash{
+  width: 704px;
+  height: 1px;
+  background: white;
+  margin: 0;
+  }
+  .col-md-6.mt-5.pl-5 p,
+  .col-md-6.mt-5.pl-5 h2,
+  .col-md-6.mt-5.pl-5 h3{
+  width: 80vw;
+  margin-top: 10px;
+  }
+
+  .social-media-links{
+    float: right;
+    margin: 0;
+    padding: 5px;
+  }
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  .cover h1 {
+ font-size: 4em;
+ }
+     
+ .btn-custom{
+  margin: 10px 15px;
+ }
+     
+ .slash{
+  width: 704px;
+  height: 1px;
+  background: white;
+  margin: 0;
+  }
+  
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  .cover h1 {
+ font-size: 5em;
+ }
+ 
+ .slash{
+  width: 2px;
+  height: 18px;
+  background: white;
+  margin: 15px 20px;
+  }
+  .col-md-6.mt-5.pl-5 p,
+  .col-md-6.mt-5.pl-5 h2,
+  .col-md-6.mt-5.pl-5 h3{
+  width:400px;
+ }
+
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+  .cover h1{
+  font-size: 6em;
+  }
+   
+ .slash{
+  width: 1px;
+  background: white;
+  margin: 20px 15px;
+  }    
+
+  .col-md-6.mt-5.pl-5 p,
+  .col-md-6.mt-5.pl-5 h2,
+  .col-md-6.mt-5.pl-5 h3{
+  width: 400px;
+ }
+
+ .social-media-links{
+  float: left;
+}
+
+}
+
